@@ -1,4 +1,6 @@
 #labels Phase-Implementation
+<wiki:toc max_depth="1" />
+
 =Introduction=
 Thank you for your interest.
 In this section it's explained how to become an active developer, helping us to improve the Rattlesnake Project.
