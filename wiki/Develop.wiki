@@ -9,13 +9,20 @@ Remember that it is and it will always be *open source* and *free*.
 =How to develop=
 ==Release schedule==
 How is the typical release schedule?
-A release of Rattlesnake is identified by: version.core_lastmajorrelease.core_lastminorrelease.contrib_lastrelease
-*Where:*
+A release of Rattlesnake is identified by:
+`version.core_lastmajorrelease.core_lastminorrelease.contrib_lastrelease`
+The following code explain of the release version:
+{{{
+if core_lastmajorrelease == 10:
+  version += 1
+
+if major_feature
+}}}
   **version*: When 10 major release comes out version is incremented and core_lastmajorrelease is resetted
   **core_lastmajorrelease*: When a major_release comes out core_lastmajorrelease is incremented.
   It comes out when:
     *A `major_feature` is released
-    *10 minor_features are released, so core_lastmajorrelease is incremented and core_lastminorrelease is decremented
+    *10 `minor_features` are released, so `core_lastmajorrelease` is incremented and `core_lastminorrelease` is decremented
   **core_lastminorrelease*: When a minor_feature is released, core_lastminorrelease is incremented
   **contrib_lastrelease*: When an extension is released and it's approved to be in the official framework, contrib_lastrelease is increased.
 ==The most important thing==
