@@ -9,11 +9,10 @@ Remember that it is and it will always be *open source* and *free*.
 =How to develop=
 ==Release schedule==
 How is the typical release schedule?
-A release of Rattlesnake is identified by: <version>.&lt;<em>core_lastmajorrelease</em>&gt;.&lt;<em>core_lastminorrelease</em>&gt;.&lt;<em>contrib_lastrelease</em>&gt;</version>
-<h5>Where:</h5>
-<ul>
-	<li><strong>version</strong>: When 10 major release comes out version is incremented and core_lastmajorrelease is resetted</li>
-	<li><strong>core_lastmajorrelease</strong>: When a <em>major_release</em> comes out <em>core_lastmajorrelease</em> is incremented.
+A release of Rattlesnake is identified by: version.core_lastmajorrelease.core_lastminorrelease.contrib_lastrelease
+*Where:*
+  * *version*: When 10 major release comes out version is incremented and core_lastmajorrelease is resetted</li>
+  * *core_lastmajorrelease*: When a <em>major_release</em> comes out <em>core_lastmajorrelease</em> is incremented.
 It comes out when:&nbsp;
 <ul>
 	<li>A <em>major_feature</em> is released</li>
