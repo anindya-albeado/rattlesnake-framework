@@ -1,3 +1,4 @@
+#summary List of all wiki pages
 #sidebar SidebarPage
   * [Develop Develop]
     * [DevelopFAQ Develop FAQ]
