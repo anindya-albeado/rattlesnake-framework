@@ -47,27 +47,6 @@ class JobException(RsException):
     def __repr__(self):
         return "%s|%s|%s" % (self.id_job, self.unitName, self.reason)
 
-class ParentException(JobException):
-    def __init__(self, unitName, reason, id_job = None, \
-                 stop_children_exec = False):
-        JobException.__init__(self, unitName, reason, id_job)
-        if callable(stop_children_exec):
-            self.isstopped_children = stop_children_exec()
-        else:
-            self.isstopped_children = stop_children_exec
-        if self.isstopped_children:
-            raise JobException("Children killer", self.reason, \
-                                self.id_job)
-
-    def __str__(self):
-        return "Job: %s (%s) is aborted. Reason: %s. Children %s" % \
-           (self.id_job, self.unitName, self.reason, \
-            self.isstopped_children and "killed" or "aren't killed")
-
-    def __repr__(self):
-        return "%s|%s|%s|%s" % (self.id_job, self.unitName, self.reason, \
-                                self.isstopped_children)
-
 class ScriptException(RsException):
     """Script level exception
     
