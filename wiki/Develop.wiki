@@ -28,7 +28,7 @@ A project has to be well organized. You can develop your ideas without discuss i
 The _brainstorming phase_ of the development of a feature is the most important, because a project organized well is that it has been analyzed in each of its parts.
 So, the main features that are implemented are those discussed in the brainstorming page.
 ==Core and Contrib==
-You can decide to develop the Core of the framework or the Contrib part. What's the difference?
+You can decide to develop the Core of the framework or the Contrib part. What's the difference? `*`
 It's Simple:
   * *Core*
 What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean?
