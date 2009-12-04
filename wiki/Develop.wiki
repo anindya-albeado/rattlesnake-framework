@@ -11,27 +11,21 @@ Remember that it is and it will always be *open source* and *free*.
 How is the typical release schedule?
 A release of Rattlesnake is identified by: version.core_lastmajorrelease.core_lastminorrelease.contrib_lastrelease
 *Where:*
-  * *version*: When 10 major release comes out version is incremented and core_lastmajorrelease is resetted</li>
-  * *core_lastmajorrelease*: When a <em>major_release</em> comes out <em>core_lastmajorrelease</em> is incremented.
-It comes out when:&nbsp;
-<ul>
-	<li>A <em>major_feature</em> is released</li>
-	<li>Or 10 <em>minor_features</em> are released, so <em>core_lastmajorrelease</em> is incremented and <em>core_lastminorrelease</em> is decremented</li>
-</ul>
-</li>
-	<li><strong>core_lastminorrelease</strong>: When a <em>minor_feature</em> is released, <em>core_lastminorrelease</em> is incremented</li>
-	<li><strong>contrib_lastrelease</strong>: When an extension is released and it's approved to be in the official framework, <em>contrib_lastrelease</em> is increased.</li>
-</ul>
-<h3>2.2- The most important thing</h3>
-A project has to be <span style="text-decoration: underline;">well organized</span>. You can develop your ideas without discuss it in the <strong><abbr>brainstorming</abbr> page</strong>, but it's very very important that every ideas are discussed in by the developers, in the <abbr>brainstorming</abbr> page.
-The <abbr>brainstorming</abbr> phase of the development of a feature is the most important, because a project organized well is that it has been analyzed in each of its parts.
-So, the main features that are implemented are those discussed in the <abbr>brainstorming</abbr> page.
-<h3>2.3- Core and Contrib</h3>
-You can decide to develop the <em>Core of the framework</em> or the <em>Contrib part</em>. What's the difference?
+  **version*: When 10 major release comes out version is incremented and core_lastmajorrelease is resetted
+  **core_lastmajorrelease*: When a major_release comes out core_lastmajorrelease is incremented.
+  It comes out when:
+    *A major_feature is released
+    *10 minor_features are released, so core_lastmajorrelease is incremented and core_lastminorrelease is decremented
+  **core_lastminorrelease*: When a minor_feature is released, core_lastminorrelease is incremented
+  **contrib_lastrelease*: When an extension is released and it's approved to be in the official framework, contrib_lastrelease is increased.
+==The most important thing==
+A project has to be well organized. You can develop your ideas without discuss it in the brainstorming page, but it's very very important that every ideas are discussed by a lot of developers, possibly in the brainstorming page.
+The _brainstorming phase_ of the development of a feature is the most important, because a project organized well is that it has been analyzed in each of its parts.
+So, the main features that are implemented are those discussed in the brainstorming page.
+==Core and Contrib==
+You can decide to develop the Core of the framework or the Contrib part. What's the difference?
 It's Simple:
-<ul>
-	<li>
-<h5><span style="text-decoration: underline;">Core</span>:</h5>
+===Core===:
 What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean?
 The core it's the necessary part of the framework. If you want to use Rattlesnake, you have to use the Core.
 In the core there're the main features of the framework, like the <em>Scheduler</em>, the <em>Memory Management System</em>, the <em>Flux Control</em>, the <em>Exception Handler</em>, the <em>Input Manager</em>, the <em>Parameters Manager</em>, etc.. (For a complete list of the Core features, read the Reference).</li>
