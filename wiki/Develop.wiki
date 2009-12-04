@@ -77,8 +77,9 @@ It requires the following fields:
   * *Work directory*: The work directory has to be your local project dir.
 ===How to use the subversion client===
 There are 3 main commands in a subversion client:
+  * *Svn add*: You add a folder (or file) to the version control, so when you execute a commit command that folder (or file) is uploaded.
   * *Commit*: You upload the files in the repository, uploading the files in the svn repository.
-  * *Update*: You download the files from the repository, replacing the files in your project directory
+  * *Update*: You download the files from the repository, replacing the files in your project directory.
 There are other important commands in SVN, you can check the details in the following guide: [http://svnbook.red-bean.com/nightly/en/svn-book.pdf]
 ==Development Environment==
 First of all you need [http://python.org Python].
