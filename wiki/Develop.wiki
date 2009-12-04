@@ -1,4 +1,5 @@
 #labels Phase-Implementation
+#sidebar Sidebar
 =Table of Contents=
 <wiki:toc />
 
