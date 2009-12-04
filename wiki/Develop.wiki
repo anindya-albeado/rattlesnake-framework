@@ -32,7 +32,8 @@ You can decide to develop the Core of the framework or the Contrib part. What's 
 
 It's Simple:
   * *Core*
-  What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean? The core it's the necessary part of the framework. If you want to use Rattlesnake, you have to use the Core. In the core there're the main features of the framework, like the _Jobs Scheduler_, the _Memory Management System_, the _Exception Handlers_, the Input Manager_, the _Parameters Manager_, etc.. (For a complete list of the Core features, read the Reference).
+  What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean?
+  The core it's the necessary part of the framework. If you want to use Rattlesnake, you have to use the Core. In the core there're the main features of the framework, like the _Jobs Scheduler_, the _Memory Management System_, the _Exception Handlers_, the _Input Manager_, the _Parameters Manager_, etc.. (For a complete list of the Core features, read the Reference).
   * *Contrib*
   What is the Contrib part of Rattlesnake? Why does it exist?
   The Contrib part of the framework can be called the <em>Extension part</em>. Everything that it isn't in the core it's an extension.
