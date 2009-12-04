@@ -1,4 +1,4 @@
 #sidebar SidebarPage
-  * [Develop]
-    * [Develop FAQ]
+  * [Develop Develop]
+    * [DevelopFAQ Develop FAQ]
   * [Help]
