@@ -46,7 +46,7 @@ A diagram could be more explanatory than a paragraph:
 
   * *Point (1)*:
   The major features ready to be developed are in the Feature Request tracker tagged as _Major_ (look at the tracking paragraph 3).
-  A feature is ready when it's discussed and approved in the <abbr>brainstorming page.
+  A feature is ready when it's discussed and approved in the brainstorming page.
   After making code-changes you should post a comment in the Feature Request tracker; so the other developers are well syncronized, understanding what is already implemented and what needs to be revised.
   * *Point (2)*:
   The minor features ready to be developed are in the Feature Request tracker tagged as _Minor_. You mustn't post a comment in the Feature Request tracker, but it would be better.
@@ -55,16 +55,12 @@ As in the core development section, a diagram could be more explanatory than a p
   * *Point (1)*:
 There's more freedom about the Contrib development. The extensions can be developed by individual developers or by a group of them. It's recommended to be discussed in the <strong><abbr>brainstorming</abbr> page</strong>.</li>
 </ul>
-<h3>2.6- How to become operative</h3>
+==How to become operative==
 There aren't any complex phases to become operative:
-<ol>
-	<li>Read the <em>Official Guide</em>, the <em>Reference</em> and choose what you want to develop.</li>
-	<li>Go to the Feature Tracking page for some informations about what to develop and contact any developer if you have any questions (if they aren't available please contact me at <em><span style="text-decoration: underline;">mola89@gmail.com</span></em>).</li>
-</ol>
-<h2>3- Tracking:</h2>
-<ol>
-	<li>
-<h3><abbr>Bug Tracking System (BTS)</abbr>:</h3>
+  * Read the _Official Guide_, the _Reference_ and choose what you want to develop.
+  * Go to the Feature Tracking page for some informations about what to develop and contact any developer if you have any questions (if they aren't available please contact me at _mola89@gmail.com_).
+=Tracking:=
+==Issue Tracking System==
 <ul>
 	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223244">Add</a> a new bug to the <acronym>BTS</acronym>.</li>
 	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223244">Browse</a> all bugs tracked.</li>
