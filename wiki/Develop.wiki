@@ -73,7 +73,7 @@ After making changes to the code you can upload it using the configured client.
 ===Configuration of the subversion client===
 The first time you use the repository you have to checkout it.
 It requires the following fields:
-  * *Svn repository*: It's the following: [https://rattlesnake-framework.googlecode.com/svn/trunk/].
+  * *Svn repository*: It's the following: [https://rattlesnake-framework.googlecode.com/svn]. When it askes you which directory in the repository you want to use write _trunk_
   * *Work directory*: The work directory has to be your local project dir.
 ===How to use the subversion client===
 There are 3 main commands in a subversion client:
