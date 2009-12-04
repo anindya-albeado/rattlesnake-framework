@@ -1,4 +1,4 @@
-#summary Quick guide for anyone who wants to start developing
+#summary Quick guide for anyone who wants to start to develop
 #labels Phase-Implementation
 =Table of Contents=
 <wiki:toc />
