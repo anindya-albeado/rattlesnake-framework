@@ -83,36 +83,30 @@ There are other important commands in SVN, you can check the details in the foll
 ==Development Environment==
 First of all you need [http://python.org Python].
 You can use an editor, like:
-<ul>
-	<li><a href="http://kate-editor.org/"><abbr>Kate</abbr></a> (Linux)</li>
-	<li><a href="http://notepad-plus.sourceforge.net/"><abbr>Notepad++</abbr></a> (Win)</li>
-	<li><a href="http://www.jedit.org/"><abbr>jEdit</abbr></a> (Multiplatform)</li>
-</ul>
-Or you can use an <em><abbr>Integrated Development Environment</abbr>(<acronym>IDE</acronym>)</em>, like:
-<ul>
-	<li><a href="http://www.eclipse.org/"><abbr>Eclipse with PyDev</abbr></a> (Multiplatform). It is the recommended Development Environment</li>
-	<li><a href="http://www.netbeans.org/"><abbr>Netbeans with Python plugin</abbr></a> (Multiplatform)</li>
-</ul>
-<h2>5- Guidelines</h2>
-This project follows the <em>Zen of Python</em>:
-<ul>
-	<li>Beautiful is better than ugly.</li>
-	<li>Explicit is better than implicit.</li>
-	<li>Simple is better than complex.</li>
-	<li>Complex is better than complicated.</li>
-	<li>Flat is better than nested.</li>
-	<li>Sparse is better than dense.</li>
-	<li>Readability counts.</li>
-	<li>Special cases aren't special enough to break the rules.</li>
-	<li>Although practicality beats purity.</li>
-	<li>Errors should never pass silently.</li>
-	<li>Unless explicitly silenced.</li>
-	<li>In the face of ambiguity, refuse the temptation to guess.</li>
-	<li>There should be one-- and preferably only one --obvious way to do it.</li>
-	<li>Although that way may not be obvious at first unless you're Dutch.</li>
-	<li>Now is better than never.</li>
-	<li>Although never is often better than *right* now.</li>
-	<li>If the implementation is hard to explain, it's a bad idea.</li>
-	<li>If the implementation is easy to explain, it may be a good idea.</li>
-	<li>Namespaces are one honking great idea -- let's do more of those!</li>
-</ul>
+  * [http://kate-editor.org Kate] (Linux)
+  * [http://notepad-plus.sourceforge.net Notepad++] (Win)
+  * [http://www.jedit.org jEdit] (Multiplatform)
+Or you can use an Integrated Development Environment (_IDE_), like:
+  * [http://www.eclipse.org Eclipse] with [http://pydev.org PyDev] (Multiplatform). It is the *recommended Development Environment*
+  * [http://www.netbeans.org Netbeans] with the [http://download.netbeans.org/netbeans/6.7/python/ea2 Python plugin](Multiplatform)
+=Guidelines=
+This project follows the _Zen of Python_:
+  * Beautiful is better than ugly.
+  * Explicit is better than implicit.
+  * Simple is better than complex.
+  * Complex is better than complicated.
+  * Flat is better than nested.
+  * Sparse is better than dense.
+  * Readability counts.
+  * Special cases aren't special enough to break the rules.
+  * Although practicality beats purity.
+  * Errors should never pass silently.
+  * Unless explicitly silenced.
+  * In the face of ambiguity, refuse the temptation to guess.
+  * There should be one-- and preferably only one --obvious way to do it.
+  * Although that way may not be obvious at first unless you're Dutch.
+  * Now is better than never.
+  * Although never is often better than *right* now.
+  * If the implementation is hard to explain, it's a bad idea.
+  * If the implementation is easy to explain, it may be a good idea.
+  * Namespaces are one honking great idea -- let's do more of those!
