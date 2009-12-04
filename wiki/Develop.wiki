@@ -1,5 +1,5 @@
+#summary Quick guide for anyone who wants to start developing
 #labels Phase-Implementation
-#sidebar SidebarPage
 =Table of Contents=
 <wiki:toc />
 
