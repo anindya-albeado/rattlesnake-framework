@@ -45,7 +45,7 @@ It's Simple:
   It depends. If it's a library that it's used by other libraries, it should be in the Core; if it isn't, it should be in Contrib. If it's something that it's used by users and not by other libraries it has to be in Contrib, if it isn't it has to be in the Core.
   Remember that contrib features have to be tested and so, if they're stable and usable, they're included in the Contrib part of the official framework.
 ==Core development==
-A diagram could be more explanatory than a paragraph:
+A diagram would be more explanatory than a paragraph:
 http://lh3.ggpht.com/_YFrKaQj9Z88/SxlHDG5VPHI/AAAAAAAAAJk/vjhYIGwnJYU/core_dev_cycle.png
   * *Point (1)*:
   The major features ready to be developed are in the Feature Request tracker tagged as _Major_ (look at the tracking paragraph 3).
@@ -54,7 +54,8 @@ http://lh3.ggpht.com/_YFrKaQj9Z88/SxlHDG5VPHI/AAAAAAAAAJk/vjhYIGwnJYU/core_dev_c
   * *Point (2)*:
   The minor features ready to be developed are in the Feature Request tracker tagged as _Minor_. You mustn't post a comment in the Feature Request tracker, but it would be better.
 ==Contrib development==
-As in the core development section, a diagram could be more explanatory than a paragraph:
+A diagram would be more explanatory than a paragraph:
+http://lh5.ggpht.com/_YFrKaQj9Z88/SxlJPkcBBpI/AAAAAAAAAJs/ltBYOkq6LaI/contrib_dev_cycle.png
   * *Point (1)*:
   There's more freedom about the Contrib development. The extensions can be developed by individual developers or by a group of them. It's recommended to be discussed in the brainstorming page.
 ==How to become operative==
