@@ -46,7 +46,7 @@ It's Simple:
   Remember that contrib features have to be tested and so, if they're stable and usable, they're included in the Contrib part of the official framework.
 ==Core development==
 A diagram could be more explanatory than a paragraph:
-
+http://picasaweb.google.com/lh/photo/m5PqgUImWoljh0W2t_PRgQ?feat=directlink
   * *Point (1)*:
   The major features ready to be developed are in the Feature Request tracker tagged as _Major_ (look at the tracking paragraph 3).
   A feature is ready when it's discussed and approved in the brainstorming page.
