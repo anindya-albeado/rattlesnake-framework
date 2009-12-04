@@ -1,0 +1,178 @@
+#labels Phase-Implementation
+h2>Index</h2>
+<ul>
+	<li>1- Introduction</li>
+	<li>2- How to develop
+<ul>
+	<li>2.1- Release schedule</li>
+	<li>2.2- The most important thing</li>
+	<li>2.3- Core and Contrib</li>
+	<li>2.4- Core development</li>
+	<li>2.5- Contrib development</li>
+	<li>2.6- How to become operative</li>
+</ul>
+</li>
+	<li>3- Tracking</li>
+	<li>4- Tools
+<ul>
+	<li>4.1- Subversion</li>
+	<li>4.2- Development Environment</li>
+</ul>
+</li>
+	<li>5- Guidelines</li>
+</ul>
+<h2>1- Introduction</h2>
+Thank you for your interest.
+In this section it's explained how to become an active developer, helping us to improve the Rattlesnake Project.
+If you need help contact the <abbr>project manager</abbr> at <em><span style="text-decoration: underline;">mola89@gmail.com</span></em> or other developers.
+I suggest you to read some help manuals and guides. You can find them in the help section.
+
+Remember that it is and it will always be <abbr><strong>open source</strong></abbr> and <strong>free</strong>.
+<h2>2- How to develop</h2>
+<h3>2.1- <abbr>Release schedule</abbr></h3>
+How is the typical <abbr>release schedule</abbr>?
+A release of Rattlesnake is identified by: <version>.&lt;<em>core_lastmajorrelease</em>&gt;.&lt;<em>core_lastminorrelease</em>&gt;.&lt;<em>contrib_lastrelease</em>&gt;</version>
+<h5>Where:</h5>
+<ul>
+	<li><strong>version</strong>: When 10 major release comes out version is incremented and core_lastmajorrelease is resetted</li>
+	<li><strong>core_lastmajorrelease</strong>: When a <em>major_release</em> comes out <em>core_lastmajorrelease</em> is incremented.
+It comes out when:&nbsp;
+<ul>
+	<li>A <em>major_feature</em> is released</li>
+	<li>Or 10 <em>minor_features</em> are released, so <em>core_lastmajorrelease</em> is incremented and <em>core_lastminorrelease</em> is decremented</li>
+</ul>
+</li>
+	<li><strong>core_lastminorrelease</strong>: When a <em>minor_feature</em> is released, <em>core_lastminorrelease</em> is incremented</li>
+	<li><strong>contrib_lastrelease</strong>: When an extension is released and it's approved to be in the official framework, <em>contrib_lastrelease</em> is increased.</li>
+</ul>
+<h3>2.2- The most important thing</h3>
+A project has to be <span style="text-decoration: underline;">well organized</span>. You can develop your ideas without discuss it in the <strong><abbr>brainstorming</abbr> page</strong>, but it's very very important that every ideas are discussed in by the developers, in the <abbr>brainstorming</abbr> page.
+The <abbr>brainstorming</abbr> phase of the development of a feature is the most important, because a project organized well is that it has been analyzed in each of its parts.
+So, the main features that are implemented are those discussed in the <abbr>brainstorming</abbr> page.
+<h3>2.3- Core and Contrib</h3>
+You can decide to develop the <em>Core of the framework</em> or the <em>Contrib part</em>. What's the difference?
+It's Simple:
+<ul>
+	<li>
+<h5><span style="text-decoration: underline;">Core</span>:</h5>
+What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean?
+The core it's the necessary part of the framework. If you want to use Rattlesnake, you have to use the Core.
+In the core there're the main features of the framework, like the <em>Scheduler</em>, the <em>Memory Management System</em>, the <em>Flux Control</em>, the <em>Exception Handler</em>, the <em>Input Manager</em>, the <em>Parameters Manager</em>, etc.. (For a complete list of the Core features, read the Reference).</li>
+	<li>
+<h5><span style="text-decoration: underline;">Contrib</span>:</h5>
+What is the Contrib part of Rattlesnake? Why does it exist?
+The Contrib part of the framework can be called the <em>Extension part</em>. Everything that it isn't in the core it's an extension.
+An extension depends from the core and it should be independent from other extensions.
+So, I want to develop a new feature. Do I have to develop it in the Core or in Contrib?
+It depends. If it's a library that it's used by other libraries, it should be in the Core; if it isn't, it should be in Contrib. If it's something that it's used by users and not by other libraries it has to be in Contrib, if it isn't it has to be in the Core.
+Remember that contrib features have to be tested and so, if they're stable and usable, they're included in the Contrib part of the official framework.</li>
+</ul>
+<h3>2.4- Core development</h3>
+[caption id="attachment_108" align="aligncenter" width="646" caption="Rattlesnake core development cycle"]<a href="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_core_dev_cycle.png"><img class="size-full wp-image-108" title="rattlesnake_core_dev_cycle" src="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_core_dev_cycle.png" alt="Rattlesnake core development cycle" width="646" height="529" /></a>[/caption]
+<ul>
+	<li>
+<h4>Point (1):</h4>
+The major features ready to be developed are in the <strong>Feature Request tracker</strong> tagged as <em>Major</em>. (look at the tracking paragraph (N&deg;3)). A feature is ready when it's discussed and approved in the <abbr>brainstorming</abbr> page. After making code-changes you should post a comment in the Feature Request tracker; so the other developers are well syncronized, understanding what is already implemented and what needs to be revised.</li>
+	<li>
+<h4>Point (2):</h4>
+The major features ready to be developed are in the <strong>Feature Request tracker</strong> tagged as <em>Minor</em>. You mustn't post a comment in the Feature Request tracker, but it would be better.</li>
+</ul>
+<h3>2.5- Contrib development</h3>
+[caption id="attachment_110" align="aligncenter" width="498" caption="Rattlesnake contrib development cycle"]<a href="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_contrib_dev_cycle.png"><img class="size-full wp-image-110" title="rattlesnake_contrib_dev_cycle" src="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_contrib_dev_cycle.png" alt="Rattlesnake contrib development cycle" width="498" height="510" /></a>[/caption]
+<ul>
+	<li>
+<h4>Point (1):</h4>
+There's more freedom about the Contrib development. The extensions can be developed by individual developers or by a group of them. It's recommended to be discussed in the <strong><abbr>brainstorming</abbr> page</strong>.</li>
+</ul>
+<h3>2.6- How to become operative</h3>
+There aren't any complex phases to become operative:
+<ol>
+	<li>Read the <em>Official Guide</em>, the <em>Reference</em> and choose what you want to develop.</li>
+	<li>Go to the Feature Tracking page for some informations about what to develop and contact any developer if you have any questions (if they aren't available please contact me at <em><span style="text-decoration: underline;">mola89@gmail.com</span></em>).</li>
+</ol>
+<h2>3- Tracking:</h2>
+<ol>
+	<li>
+<h3><abbr>Bug Tracking System (BTS)</abbr>:</h3>
+<ul>
+	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223244">Add</a> a new bug to the <acronym>BTS</acronym>.</li>
+	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223244">Browse</a> all bugs tracked.</li>
+</ul>
+</li>
+	<li>
+<h3><abbr>Feature Fequests</abbr>:</h3>
+<ul>
+	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223247">Add</a> a new <abbr>feature request</abbr>.</li>
+	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223247">Browse</a> all <abbr>feature requests</abbr>.</li>
+</ul>
+</li>
+	<li>
+<h3><abbr>Patches</abbr>:</h3>
+<ul>
+	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223246">Add</a> a new patch.</li>
+	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223246">Browse</a> all patches.</li>
+</ul>
+</li>
+	<li>
+<h3><abbr>Support Requests</abbr>:</h3>
+<ul>
+	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223245">Add</a> a new support request.</li>
+	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223245">Browse</a> all support requests.</li>
+</ul>
+</li>
+</ol>
+<h2>4- Tools:</h2>
+There are some useful tools that can help you to perform a better job.
+<h3>4.1- <abbr>Subversion</abbr></h3>
+When you develop you should use a subversion client (for example <a href="http://www.rapidsvn.org/index.php/Main_Page">RapidSVN</a>).
+After making changes to the code you can upload it using the configured client.
+<h4>Configuration of the subversion client</h4>
+You have to checkout the <acronym>svn</acronym> repository.
+It requires the following fields:
+<ul>
+	<li><strong>Svn repository:</strong> It's the following: <a href="https://rattlesnake.svn.sourceforge.net/svnroot/rattlesnake">https://rattlesnake.svn.sourceforge.net/svnroot/rattlesnake</a>.</li>
+	<li><strong>Target directory</strong> The target directory has to be the project dir.</li>
+</ul>
+<h4>How to use the subversion client</h4>
+There are 2 main use of the subversion client:
+<ul>
+	<li><strong>Commit:</strong> You upload the files in the repository, uploading the files in the <acronym>svn</acronym> repository.</li>
+	<li><strong>Update:</strong> You download the files in the repository, downloading the files locally, replacing the files in your project directory</li>
+</ul>
+There are other important uses of SVN, you can check the details in the following guide (if you need to know them): <a href="http://svnbook.red-bean.com/nightly/en/svn-book.pdf">http://svnbook.red-bean.com/nightly/en/svn-book.pdf</a>
+<h3>4.2- <abbr>Development Environment</abbr></h3>
+First of all you need <a href="http://python.org/"><abbr>Python</abbr></a>.
+You can use an editor, like:
+<ul>
+	<li><a href="http://kate-editor.org/"><abbr>Kate</abbr></a> (Linux)</li>
+	<li><a href="http://notepad-plus.sourceforge.net/"><abbr>Notepad++</abbr></a> (Win)</li>
+	<li><a href="http://www.jedit.org/"><abbr>jEdit</abbr></a> (Multiplatform)</li>
+</ul>
+Or you can use an <em><abbr>Integrated Development Environment</abbr>(<acronym>IDE</acronym>)</em>, like:
+<ul>
+	<li><a href="http://www.eclipse.org/"><abbr>Eclipse with PyDev</abbr></a> (Multiplatform). It is the recommended Development Environment</li>
+	<li><a href="http://www.netbeans.org/"><abbr>Netbeans with Python plugin</abbr></a> (Multiplatform)</li>
+</ul>
+<h2>5- Guidelines</h2>
+This project follows the <em>Zen of Python</em>:
+<ul>
+	<li>Beautiful is better than ugly.</li>
+	<li>Explicit is better than implicit.</li>
+	<li>Simple is better than complex.</li>
+	<li>Complex is better than complicated.</li>
+	<li>Flat is better than nested.</li>
+	<li>Sparse is better than dense.</li>
+	<li>Readability counts.</li>
+	<li>Special cases aren't special enough to break the rules.</li>
+	<li>Although practicality beats purity.</li>
+	<li>Errors should never pass silently.</li>
+	<li>Unless explicitly silenced.</li>
+	<li>In the face of ambiguity, refuse the temptation to guess.</li>
+	<li>There should be one-- and preferably only one --obvious way to do it.</li>
+	<li>Although that way may not be obvious at first unless you're Dutch.</li>
+	<li>Now is better than never.</li>
+	<li>Although never is often better than *right* now.</li>
+	<li>If the implementation is hard to explain, it's a bad idea.</li>
+	<li>If the implementation is easy to explain, it may be a good idea.</li>
+	<li>Namespaces are one honking great idea -- let's do more of those!</li>
+</ul>
