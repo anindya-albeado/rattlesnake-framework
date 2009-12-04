@@ -42,20 +42,17 @@ It's Simple:
   It depends. If it's a library that it's used by other libraries, it should be in the Core; if it isn't, it should be in Contrib. If it's something that it's used by users and not by other libraries it has to be in Contrib, if it isn't it has to be in the Core.
   Remember that contrib features have to be tested and so, if they're stable and usable, they're included in the Contrib part of the official framework.
 ==Core development==
-[caption id="attachment_108" align="aligncenter" width="646" caption="Rattlesnake core development cycle"]<a href="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_core_dev_cycle.png"><img class="size-full wp-image-108" title="rattlesnake_core_dev_cycle" src="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_core_dev_cycle.png" alt="Rattlesnake core development cycle" width="646" height="529" /></a>[/caption]
-<ul>
-	<li>
-<h4>Point (1):</h4>
-The major features ready to be developed are in the <strong>Feature Request tracker</strong> tagged as <em>Major</em>. (look at the tracking paragraph (N&deg;3)). A feature is ready when it's discussed and approved in the <abbr>brainstorming</abbr> page. After making code-changes you should post a comment in the Feature Request tracker; so the other developers are well syncronized, understanding what is already implemented and what needs to be revised.</li>
-	<li>
-<h4>Point (2):</h4>
-The major features ready to be developed are in the <strong>Feature Request tracker</strong> tagged as <em>Minor</em>. You mustn't post a comment in the Feature Request tracker, but it would be better.</li>
-</ul>
-<h3>2.5- Contrib development</h3>
-[caption id="attachment_110" align="aligncenter" width="498" caption="Rattlesnake contrib development cycle"]<a href="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_contrib_dev_cycle.png"><img class="size-full wp-image-110" title="rattlesnake_contrib_dev_cycle" src="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_contrib_dev_cycle.png" alt="Rattlesnake contrib development cycle" width="498" height="510" /></a>[/caption]
-<ul>
-	<li>
-<h4>Point (1):</h4>
+A diagram could be more explanatory than a paragraph:
+
+  * *Point (1)*:
+  The major features ready to be developed are in the Feature Request tracker tagged as _Major_ (look at the tracking paragraph 3).
+  A feature is ready when it's discussed and approved in the <abbr>brainstorming page.
+  After making code-changes you should post a comment in the Feature Request tracker; so the other developers are well syncronized, understanding what is already implemented and what needs to be revised.
+  * *Point (2)*:
+  The minor features ready to be developed are in the Feature Request tracker tagged as _Minor_. You mustn't post a comment in the Feature Request tracker, but it would be better.
+==Contrib development==
+As in the core development section, a diagram could be more explanatory than a paragraph:
+  * *Point (1)*:
 There's more freedom about the Contrib development. The extensions can be developed by individual developers or by a group of them. It's recommended to be discussed in the <strong><abbr>brainstorming</abbr> page</strong>.</li>
 </ul>
 <h3>2.6- How to become operative</h3>
