@@ -53,7 +53,7 @@ A diagram could be more explanatory than a paragraph:
 ==Contrib development==
 As in the core development section, a diagram could be more explanatory than a paragraph:
   * *Point (1)*:
-There's more freedom about the Contrib development. The extensions can be developed by individual developers or by a group of them. It's recommended to be discussed in the <strong><abbr>brainstorming</abbr> page</strong>.</li>
+  There's more freedom about the Contrib development. The extensions can be developed by individual developers or by a group of them. It's recommended to be discussed in the brainstorming page.
 </ul>
 ==How to become operative==
 There aren't any complex phases to become operative:
