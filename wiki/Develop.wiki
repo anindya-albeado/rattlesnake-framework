@@ -25,7 +25,7 @@ So, the main features that are implemented are those discussed in the brainstorm
 ==Core and Contrib==
 You can decide to develop the Core of the framework or the Contrib part. What's the difference?
 It's Simple:
-===Core===:
+===Core===
 What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean?
 The core it's the necessary part of the framework. If you want to use Rattlesnake, you have to use the Core.
 In the core there're the main features of the framework, like the <em>Scheduler</em>, the <em>Memory Management System</em>, the <em>Flux Control</em>, the <em>Exception Handler</em>, the <em>Input Manager</em>, the <em>Parameters Manager</em>, etc.. (For a complete list of the Core features, read the Reference).</li>
