@@ -64,56 +64,24 @@ http://lh5.ggpht.com/_YFrKaQj9Z88/SxlJPkcBBpI/AAAAAAAAAJs/ltBYOkq6LaI/contrib_de
 There aren't any complex phases to become operative:
   * Read the _Official Guide_, the _Reference_ and choose what you want to develop.
   * Go to the Feature Tracking page for some informations about what to develop and contact any developer if you have any questions (if they aren't available please contact me at _mola89@gmail.com_).
-=Tracking:=
-==Issue Tracking System==
-<ul>
-	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223244">Add</a> a new bug to the <acronym>BTS</acronym>.</li>
-	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223244">Browse</a> all bugs tracked.</li>
-</ul>
-</li>
-	<li>
-<h3><abbr>Feature Fequests</abbr>:</h3>
-<ul>
-	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223247">Add</a> a new <abbr>feature request</abbr>.</li>
-	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223247">Browse</a> all <abbr>feature requests</abbr>.</li>
-</ul>
-</li>
-	<li>
-<h3><abbr>Patches</abbr>:</h3>
-<ul>
-	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223246">Add</a> a new patch.</li>
-	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223246">Browse</a> all patches.</li>
-</ul>
-</li>
-	<li>
-<h3><abbr>Support Requests</abbr>:</h3>
-<ul>
-	<li><a href="https://sourceforge.net/tracker/?func=add&amp;group_id=288846&amp;atid=1223245">Add</a> a new support request.</li>
-	<li><a href="https://sourceforge.net/tracker/?group_id=288846&amp;atid=1223245">Browse</a> all support requests.</li>
-</ul>
-</li>
-</ol>
-<h2>4- Tools:</h2>
+=Issue Tracking System=
+=Tools=
 There are some useful tools that can help you to perform a better job.
-<h3>4.1- <abbr>Subversion</abbr></h3>
-When you develop you should use a subversion client (for example <a href="http://www.rapidsvn.org/index.php/Main_Page">RapidSVN</a>).
+==Subversion==
+When you develop you should use a subversion client (for example ["http://www.rapidsvn.org/index.php/Main_Page" Rapid SVN]).
 After making changes to the code you can upload it using the configured client.
-<h4>Configuration of the subversion client</h4>
-You have to checkout the <acronym>svn</acronym> repository.
+===Configuration of the subversion client===
+The first time you use the repository you have to checkout it.
 It requires the following fields:
-<ul>
-	<li><strong>Svn repository:</strong> It's the following: <a href="https://rattlesnake.svn.sourceforge.net/svnroot/rattlesnake">https://rattlesnake.svn.sourceforge.net/svnroot/rattlesnake</a>.</li>
-	<li><strong>Target directory</strong> The target directory has to be the project dir.</li>
-</ul>
-<h4>How to use the subversion client</h4>
-There are 2 main use of the subversion client:
-<ul>
-	<li><strong>Commit:</strong> You upload the files in the repository, uploading the files in the <acronym>svn</acronym> repository.</li>
-	<li><strong>Update:</strong> You download the files in the repository, downloading the files locally, replacing the files in your project directory</li>
-</ul>
-There are other important uses of SVN, you can check the details in the following guide (if you need to know them): <a href="http://svnbook.red-bean.com/nightly/en/svn-book.pdf">http://svnbook.red-bean.com/nightly/en/svn-book.pdf</a>
-<h3>4.2- <abbr>Development Environment</abbr></h3>
-First of all you need <a href="http://python.org/"><abbr>Python</abbr></a>.
+  * *Svn repository*: It's the following: ["https://rattlesnake.svn.sourceforge.net/svnroot/rattlesnake"].
+  * *Work directory*: The work directory has to be your local project dir.
+===How to use the subversion client===
+There are 3 main commands in a subversion client:
+  * *Commit*: You upload the files in the repository, uploading the files in the svn repository.
+  * *Update*: You download the files from the repository, replacing the files in your project directory
+There are other important commands in SVN, you can check the details in the following guide: ["http://svnbook.red-bean.com/nightly/en/svn-book.pdf"]
+==Development Environment==
+First of all you need ["http://python.org" Python].
 You can use an editor, like:
 <ul>
 	<li><a href="http://kate-editor.org/"><abbr>Kate</abbr></a> (Linux)</li>
