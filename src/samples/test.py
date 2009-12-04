@@ -3,7 +3,7 @@
 
 
 from core.kernel.jobman import Job
-from core.handlers.exception import ParentException
+from core.handlers.exception import JobException
 
 __author__ = "Rattlesnake Team"
 __version__ = "1.0"
@@ -56,8 +56,7 @@ if __name__ == "__main__":
     #                       |-------> Job m_one      ------->    m_one
     #                       |-------> Job m_two      ------->    m_two
     #                       |-------> Job m_three    ------->    m_three
-    #
-    #                   |-------> Job jtthree    ------->    t_three
+    #                           |-------> Job jtthree    ------->    t_three
     #
     #
     # Job jtfour     ------->    t_four

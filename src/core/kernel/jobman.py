@@ -19,10 +19,11 @@ class Job:
     count_jobid = Counter()
 
     def __init__(self, runner, name = "Nameless", desc = "NoDesc", \
-                 children = None):
+                 children = None, exc_handler = None):
         # Initialize the attributes of self
-        self.runner = runner
         self.id = Job.count_jobid()
+        self.runner = runner
+        self.exc_handler = exc_handler
         # Set the __name__ attribute of self
         self.__name__ = name
         if self.__name__ == "Nameless" and hasattr(runner, "__name__"):
@@ -30,9 +31,6 @@ class Job:
         self.desc = desc
         if self.desc == "NoDesc" and hasattr(runner, "desc"):
             self.desc = runner.desc
-        # Check if runner is a callable object
-        if not callable(runner):
-            raise ScriptException(runner, "%s is not callable" % (runner,))
         # Schedule children
         self.children = []
         self.sched(children)
@@ -51,16 +49,15 @@ class Job:
 
     def __call__(self):
         print str(self)
-        try:
-            self.runner()
-            if len(self.children) > 0:
-                for child in self.children:
-                    try:
-                        child()
-                    except JobException as exc:
-                        print exc
-        except JobException as exc:
-            print exc
+        self.runner()
+        if len(self.children) > 0:
+            for child in self.children:
+                try:
+                    child()
+                except JobException as exc:
+                    exc_handled = self.exc_handler(exc)
+                    if  (exc_handled is True) or (not exc_handled is None):
+                        raise exc_handled
 
 
     def sched(self, children):
