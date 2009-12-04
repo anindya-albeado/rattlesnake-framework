@@ -68,20 +68,20 @@ There aren't any complex phases to become operative:
 =Tools=
 There are some useful tools that can help you to perform a better job.
 ==Subversion==
-When you develop you should use a subversion client (for example ["http://www.rapidsvn.org/index.php/Main_Page" Rapid SVN]).
+When you develop you should use a subversion client (for example [http://www.rapidsvn.org/index.php/Main_Page Rapid SVN]).
 After making changes to the code you can upload it using the configured client.
 ===Configuration of the subversion client===
 The first time you use the repository you have to checkout it.
 It requires the following fields:
-  * *Svn repository*: It's the following: ["https://rattlesnake.svn.sourceforge.net/svnroot/rattlesnake"].
+  * *Svn repository*: It's the following: [https://rattlesnake.svn.sourceforge.net/svnroot/rattlesnake].
   * *Work directory*: The work directory has to be your local project dir.
 ===How to use the subversion client===
 There are 3 main commands in a subversion client:
   * *Commit*: You upload the files in the repository, uploading the files in the svn repository.
   * *Update*: You download the files from the repository, replacing the files in your project directory
-There are other important commands in SVN, you can check the details in the following guide: ["http://svnbook.red-bean.com/nightly/en/svn-book.pdf"]
+There are other important commands in SVN, you can check the details in the following guide: [http://svnbook.red-bean.com/nightly/en/svn-book.pdf]
 ==Development Environment==
-First of all you need ["http://python.org" Python].
+First of all you need [http://python.org Python].
 You can use an editor, like:
 <ul>
 	<li><a href="http://kate-editor.org/"><abbr>Kate</abbr></a> (Linux)</li>
