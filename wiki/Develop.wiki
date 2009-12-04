@@ -10,10 +10,17 @@ Remember that it is and it will always be *open source* and *free*.
 ==Release schedule==
 How is the typical release schedule?
 A release of Rattlesnake is identified by:
-`version.core_lastmajorrelease.core_lastminorrelease.contrib_lastrelease`
+`last_version.last_core_majorrelease.last_core_minorrelease.last_contrib_release`
 The following code explain of the release version:
 {{{
-if core_lastmajorrelease == 10:
+last_version = 0
+last_core_majorrelease = 0
+last_core_minorrelease = 0
+last_contrib_release = 0
+
+core_releases_number = {"major":0 , "minor":0}
+
+if core_releases_number["major"] == 10:
   version += 1
 
 if major_feature
