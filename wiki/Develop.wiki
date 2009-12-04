@@ -1,36 +1,14 @@
 #labels Phase-Implementation
-h2>Index</h2>
-<ul>
-	<li>1- Introduction</li>
-	<li>2- How to develop
-<ul>
-	<li>2.1- Release schedule</li>
-	<li>2.2- The most important thing</li>
-	<li>2.3- Core and Contrib</li>
-	<li>2.4- Core development</li>
-	<li>2.5- Contrib development</li>
-	<li>2.6- How to become operative</li>
-</ul>
-</li>
-	<li>3- Tracking</li>
-	<li>4- Tools
-<ul>
-	<li>4.1- Subversion</li>
-	<li>4.2- Development Environment</li>
-</ul>
-</li>
-	<li>5- Guidelines</li>
-</ul>
-<h2>1- Introduction</h2>
+=Introduction=
 Thank you for your interest.
 In this section it's explained how to become an active developer, helping us to improve the Rattlesnake Project.
-If you need help contact the <abbr>project manager</abbr> at <em><span style="text-decoration: underline;">mola89@gmail.com</span></em> or other developers.
+If you need help contact the project manager at _mola89@gmail.com_ or other developers.
 I suggest you to read some help manuals and guides. You can find them in the help section.
 
-Remember that it is and it will always be <abbr><strong>open source</strong></abbr> and <strong>free</strong>.
-<h2>2- How to develop</h2>
-<h3>2.1- <abbr>Release schedule</abbr></h3>
-How is the typical <abbr>release schedule</abbr>?
+Remember that it is and it will always be *open source* and *free*.
+=How to develop=
+==Release schedule==
+How is the typical release schedule?
 A release of Rattlesnake is identified by: <version>.&lt;<em>core_lastmajorrelease</em>&gt;.&lt;<em>core_lastminorrelease</em>&gt;.&lt;<em>contrib_lastrelease</em>&gt;</version>
 <h5>Where:</h5>
 <ul>
