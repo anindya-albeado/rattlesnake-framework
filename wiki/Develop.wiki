@@ -21,19 +21,15 @@ contrib_release = 0
 # core releases number
 core_rn = {"major":0 , "minor":0}
 # contrib releases number
-contib_rn
+contib_rn = 0
 
 def update()
-  version = core_rn["major"] / 10
-  core_majorrelease = 
+  version = core_rn["major"].tens()
+  core_majorrelease = core_rn["major"].units() + core_rn["minor"].tens()
+  core_minorrelease = core_rn["minor"].units()
+  contrib_release = contrib_rn
 }}}
-  **version*: When 10 major release comes out version is incremented and core_lastmajorrelease is resetted
-  **core_lastmajorrelease*: When a major_release comes out core_lastmajorrelease is incremented.
-  It comes out when:
-    *A `major_feature` is released
-    *10 `minor_features` are released, so `core_lastmajorrelease` is incremented and `core_lastminorrelease` is decremented
-  **core_lastminorrelease*: When a minor_feature is released, core_lastminorrelease is incremented
-  **contrib_lastrelease*: When an extension is released and it's approved to be in the official framework, contrib_lastrelease is increased.
+
 ==The most important thing==
 A project has to be well organized. You can develop your ideas without discuss it in the brainstorming page, but it's very very important that every ideas are discussed by a lot of developers, possibly in the brainstorming page.
 The _brainstorming phase_ of the development of a feature is the most important, because a project organized well is that it has been analyzed in each of its parts.
