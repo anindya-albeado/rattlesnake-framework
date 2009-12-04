@@ -32,19 +32,15 @@ You can decide to develop the Core of the framework or the Contrib part. What's 
 
 It's Simple:
   * *Core*
-What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean?
-The core it's the necessary part of the framework. If you want to use Rattlesnake, you have to use the Core.
-In the core there're the main features of the framework, like the <em>Scheduler</em>, the <em>Memory Management System</em>, the <em>Flux Control</em>, the <em>Exception Handler</em>, the <em>Input Manager</em>, the <em>Parameters Manager</em>, etc.. (For a complete list of the Core features, read the Reference).</li>
-	<li>
-<h5><span style="text-decoration: underline;">Contrib</span>:</h5>
-What is the Contrib part of Rattlesnake? Why does it exist?
-The Contrib part of the framework can be called the <em>Extension part</em>. Everything that it isn't in the core it's an extension.
-An extension depends from the core and it should be independent from other extensions.
-So, I want to develop a new feature. Do I have to develop it in the Core or in Contrib?
-It depends. If it's a library that it's used by other libraries, it should be in the Core; if it isn't, it should be in Contrib. If it's something that it's used by users and not by other libraries it has to be in Contrib, if it isn't it has to be in the Core.
-Remember that contrib features have to be tested and so, if they're stable and usable, they're included in the Contrib part of the official framework.</li>
-</ul>
-<h3>2.4- Core development</h3>
+  What is the Core of Rattlesnake? It's like a kernel for a computer. What does it mean? The core it's the necessary part of the framework. If you want to use Rattlesnake, you have to use the Core. In the core there're the main features of the framework, like the _Jobs Scheduler_, the _Memory Management System_, the _Exception Handlers_, the Input Manager_, the _Parameters Manager_, etc.. (For a complete list of the Core features, read the Reference).
+  * *Contrib*
+  What is the Contrib part of Rattlesnake? Why does it exist?
+  The Contrib part of the framework can be called the <em>Extension part</em>. Everything that it isn't in the core it's an extension.
+  An extension depends from the core and it should be independent from other extensions.
+  So, I want to develop a new feature. Do I have to develop it in the Core or in Contrib?
+  It depends. If it's a library that it's used by other libraries, it should be in the Core; if it isn't, it should be in Contrib. If it's something that it's used by users and not by other libraries it has to be in Contrib, if it isn't it has to be in the Core.
+  Remember that contrib features have to be tested and so, if they're stable and usable, they're included in the Contrib part of the official framework.
+==Core development==
 [caption id="attachment_108" align="aligncenter" width="646" caption="Rattlesnake core development cycle"]<a href="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_core_dev_cycle.png"><img class="size-full wp-image-108" title="rattlesnake_core_dev_cycle" src="http://rattlesnake.sourceforge.net/wp-content/uploads/2009/11/rattlesnake_core_dev_cycle.png" alt="Rattlesnake core development cycle" width="646" height="529" /></a>[/caption]
 <ul>
 	<li>
