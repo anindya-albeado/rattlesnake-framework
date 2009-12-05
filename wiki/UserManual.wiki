@@ -1,4 +1,4 @@
-#summary End users manual for for all those who want to start using the framework
+#summary End users manual, for all those who want to start using the framework
 
 = Introduction =
 
