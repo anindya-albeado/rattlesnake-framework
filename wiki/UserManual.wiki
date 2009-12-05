@@ -1,1 +1,1 @@
-#summary End users manual, for all those who want to start using the framework
+#summary Manual for the end user
