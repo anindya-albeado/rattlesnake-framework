@@ -2,9 +2,11 @@
 """Job management"""
 
 
-from core.handlers.exception import JobException, ScriptException
+from core.handlers.exception import JobException, ScriptException, \
+                                    RsException
 from core.structures.register import Register
 from core.structures.counter import Counter
+from core.structures.doubledict import DoubleDict
 
 
 __author__ = "Rattlesnake Team"
@@ -12,9 +14,108 @@ __version__ = "1.0"
 __package__ = "core.kernel"
 
 
+class Scheduler:
+    def __init__(self):
+        self.h_j = DoubleDict()
+        self.root_job = Job(self.__root_runner, "Root", "Root job")
+
+    def add_job(self, runner, name = "Nameless", desc = "NoDesc", \
+                parent = None, exc_handler = None):
+        try:
+            j = Job(runner, name, desc, exc_handler = exc_handler)
+            h = Handler()
+            # Set the dict { Handlers : Jobs }
+            self.h_j.set_obj2(h, j)
+            # Set the dict { Jobs : Handlers }
+            self.h_j.set_obj1(j, h)
+            # Set to the parent the 'j' Job as a child
+            if parent is None:
+                self.root_job.sched([j])
+            else:
+                parent_job = self.h_j.obj2_lookup(parent)
+                parent_job.sched([j])
+            return h
+        except ScriptException as exc:
+            print exc
+
+    def run(self):
+        try:
+            self.root_job(self.h_j)
+        except JobException as exc:
+            print exc
+        except ScriptException as exc:
+            print exc
+        except RsException as exc:
+            print exc
+
+    def set_regitem(self, handler, value):
+        j = self.h_j.obj2_lookup(handler)
+        j.set_regitem(j, value)
+
+    def get_regitem(self, handler):
+        j = self.h_j.obj2_lookup(handler)
+        j.get_regitem(j.id)
+
+    def __root_runner(self):
+        pass
+
+class Handler:
+
+    def __init__(self):
+        self.onstart_job_exec = None
+        self.onstop_job_exec = None
+        self.onstart_children_exec = None
+        self.onstop_children_exec = None
+        self.onstart_child_exec = None
+        self.onstop_child_exec = None
+
+
+    def onstart_job(self):
+        if not self.onstart_job_exec is None:
+            try:
+                for task in self.onstart_job_exec:
+                    task()
+            except TypeError:
+                self.onstart_job_exec()
+    def onstop_job(self):
+        if not self.onstop_job_exec is None:
+            try:
+                for task in self.onstop_job_exec:
+                    task()
+            except TypeError:
+                self.onstop_job_exec()
+    def onstart_children(self):
+        if not self.onstart_children_exec is None:
+            try:
+                for task in self.onstart_children_exec:
+                    task()
+            except TypeError:
+                self.onstart_children_exec()
+    def onstop_children(self):
+        if not self.onstop_children_exec is None:
+            try:
+                for task in self.onstop_children_exec:
+                    task()
+            except TypeError:
+                self.onstop_children_exec()
+    def onstart_child(self):
+        if not self.onstart_child_exec is None:
+            try:
+                for task in self.onstart_child_exec:
+                    task()
+            except TypeError:
+                self.onstart_child_exec()
+    def onstop_child(self):
+        if not self.onstop_child_exec is None:
+            try:
+                for task in self.onstop_child_exec:
+                    task()
+            except TypeError:
+                self.onstop_child_exec()
+
+
 class Job:
 
-    job_list = []
     register = Register()
     count_jobid = Counter()
 
@@ -47,17 +148,31 @@ class Job:
         return "%s|%s|%s" % (self.parentid, self.id, self.__name__)
 
 
-    def __call__(self):
+    def __call__(self, h_j):
         print str(self)
+        # Get the handler linked to the 'self' job
+        handler = h_j.obj1_lookup(self)
+        # onstart_job event
+        handler.onstart_job()
         self.runner()
         if len(self.children) > 0:
+            # onstart_children event
+            handler.onstart_children()
             for child in self.children:
                 try:
-                    child()
+                    # onstart_child event
+                    handler.onstart_child()
+                    child(h_j)
+                    # onstop_child event
+                    handler.onstop_child()
                 except JobException as exc:
                     exc_handled = self.exc_handler(exc)
                     if  (exc_handled is True) or (not exc_handled is None):
                         raise exc_handled
+            # onstop_children event
+            handler.onstop_children()
+        # onstop_job event
+        handler.onstop_job()
 
 
     def sched(self, children):
@@ -80,10 +195,10 @@ class Job:
     def set_regitem(self, value):
         Job.__register.set(self.id, value)
 
-    def get_regitem(self, key):
+    def get_regitem(self, id_job):
         """Return a copy of the __register[key]"""
 
-        return Job.__register.get(key)
+        return Job.__register.get(id_job)
 
 
 

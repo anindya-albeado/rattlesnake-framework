@@ -13,7 +13,7 @@ from core.helpers.IO import msg, messages, warning, warnings, input_exec
 from core.structures.counter import Counter
 from core.structures.elemchecker import ElemChecker
 from core.structures.register import Register
-from core.kernel.scheduler import add_job, run, get_jobs
+from core.kernel.jobman import Scheduler
 
 
 __author__ = "Rattlesnake Team"
