@@ -1,1 +1,2 @@
 #summary Manual for the end user
+#labels Featured
