@@ -1,6 +1,7 @@
 #summary List of all wiki pages
 #sidebar SidebarPage
   * [Develop Develop]
+    * [Roadmap Development Roadmap]
   * [Help Help]
     * [FAQ FAQ]
     * [Tutorial Tutorial]
