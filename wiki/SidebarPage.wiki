@@ -3,7 +3,7 @@
   * [Develop Develop]
     * [Roadmap Development Roadmap]
   * [Help Help]
-    * [UserManual Manual for the end user]
+    * [UserManual User manual]
     * [FAQ FAQ]
     * [Tutorial Tutorial]
     * [Documentation Documentation]
