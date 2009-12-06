@@ -2,8 +2,9 @@
 
 Complete list on how to get help:
   # [FAQ FAQ]
+  # [Tutorial Tutorial]
   # [UserManual User Manual]
   # [Documentation Documentation]
   # [Reference Reference]
   # [Develop Develop Quickguide]
-  # contact the project admin at _mola89@gmail.com_
+  # contact the project admin at [mola89@gmail.com]
