@@ -7,5 +7,5 @@ Complete list on how to get help:
   # [Documentation Documentation].
   # [Reference Reference].
   # [Develop Develop Quickguide].
-  # Go to the [http://www.orkut.com/Main#Community?cmm=96742361 Rattlesnake community] and make a post in the forum.
+  # Go to the [http://groups.google.com/group/rattlesnake-framework Rattlesnake Framework group] and make a discussion
   # Contact the project admin at _mola89@gmail.com_
