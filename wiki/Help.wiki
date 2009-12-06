@@ -7,4 +7,4 @@ Complete list on how to get help:
   # [Documentation Documentation]
   # [Reference Reference]
   # [Develop Develop Quickguide]
-  # contact the project admin at [mola89@gmail.com]
+  # contact the project admin at _mola89@gmail.com_
