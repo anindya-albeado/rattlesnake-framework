@@ -8,5 +8,5 @@
   * Handlers layer
 
 *Version 1.0.0.0*
-  * ~~Recursive parent relationship between Jobs~~
+  * ~~Recursive parent relationships between Jobs~~
   * ~~Job and Script level exceptions~~
