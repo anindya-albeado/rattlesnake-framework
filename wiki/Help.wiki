@@ -8,4 +8,4 @@ Complete list on how to get help:
   # [Reference Reference].
   # [Develop Develop Quickguide].
   # Go to the [http://www.orkut.com/Main#Community?cmm=96742361 Rattlesnake community] and make a post in the forum.
-  # contact the project admin at _mola89@gmail.com_
+  # Contact the project admin at _mola89@gmail.com_
