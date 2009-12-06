@@ -1,1 +1,5 @@
 #summary Development roadmap
+
+Version 1.1.0.0
+  * Custom Input/Output
+  * Multithreading support
