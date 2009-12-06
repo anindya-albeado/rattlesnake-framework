@@ -1,1 +1,9 @@
 #summary Start from this page to get help
+
+Complete list on how to get help:
+  # [FAQ FAQ]
+  # [UserManual User Manual]
+  # [Documentation Documentation]
+  # [Reference Reference]
+  # [Develop Develop Quickguide]
+  # contact the project admin at _mola89@gmail.com_
