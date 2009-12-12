@@ -16,7 +16,7 @@ A release of Rattlesnake is identified by:
 `version.core_majrel.core_minrel.contrib_rel`
 The following (pseudo)code explains the release version id concept:
 {{{
-def get_versionid()
+def get_versionid():
   while core_minrel >= 10:
     core_majrel += 1
     core_minrel -= 10
