@@ -16,7 +16,7 @@ A release of Rattlesnake is identified by:
 `version.core_majrel.contrib_rel`
 
 When all features described on the [Roadmap Roadmap] of a release are implemented a `core_majrel` is released.<br/>
-After 10 `core_majrel` a new `version` is released.<br/>
+After ten `core_majrel` a new `version` is released.<br/>
 If an extension is included in the contrib part of the framework, a `contrib_rel` is released.
 
 ==The most important thing==
