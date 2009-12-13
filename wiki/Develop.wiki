@@ -58,7 +58,7 @@ http://lh5.ggpht.com/_YFrKaQj9Z88/SxlJPkcBBpI/AAAAAAAAAJs/ltBYOkq6LaI/contrib_de
     # Check the [https://code.google.com/p/rattlesnake-framework/issues/list Issue Tracker] to understand what should be developed or fixed.
     # In the [Roadmap Roadmap] page you can examine what has to be developed for the next release
     # If you have some questions please contact the project admin at _mola89@gmail.com_
-    # If you need the code reference go to [Reference Reference] me at _mola89@gmail.com_).
+    # If you need the code reference go to [Reference Reference]
 =Issue Tracking System=
 =Tools=
 There are some useful tools that can help you to perform a better job.
