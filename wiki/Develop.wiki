@@ -13,18 +13,8 @@ Remember that it is and it will always be *open source* and *free*.
 ==Release schedule==
 How is the typical release schedule?
 A release of Rattlesnake is identified by:
-`version.core_majrel.core_minrel.contrib_rel`
-The following (pseudo)code explains the release version id concept:
-{{{
-def get_versionid():
-  while core_minrel >= 10:
-    core_majrel += 1
-    core_minrel -= 10
-  while core_majrel >= 10:
-    version += 1
-    core_majrel -= 10
-  print "%s.%s.%s.%s" % (version,core_majrel,core_minrel,contrib_rel)
-}}}
+`version.core_majrel.contrib_rel`
+When all features described on the [Roadmap Roadmap] of a release are implemented a `core_majrel` is released. After 10 `core_majrel` a new `version` is released. If an extension is included in the contrib part of the framework, a `contrib_rel` is released.
 
 ==The most important thing==
 A project has to be well organized. You can develop your ideas without discuss it in the brainstorming page, but it's very very important that every ideas are discussed by a lot of developers, possibly in the brainstorming page.
