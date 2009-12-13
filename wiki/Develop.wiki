@@ -54,9 +54,11 @@ http://lh5.ggpht.com/_YFrKaQj9Z88/SxlJPkcBBpI/AAAAAAAAAJs/ltBYOkq6LaI/contrib_de
   * *Point (1)*:
   There's more freedom about the Contrib development. The extensions can be developed by individual developers or by a group of them. It's recommended to be discussed in the brainstorming page.
 ==How to become operative==
-There aren't any complex phases to become operative:
-  * Read the _Official Guide_, the _Reference_ and choose what you want to develop.
-  * Go to the Feature Tracking page for some informations about what to develop and contact any developer if you have any questions (if they aren't available please contact me at _mola89@gmail.com_).
+    # Read the [Documentation Documentation] for understanding how Rattlesnake works
+    # Check the [https://code.google.com/p/rattlesnake-framework/issues/list Issue Tracker] to understand what should be developed or fixed.
+    # In the [Roadmap Roadmap] page you can examine what has to be developed for the next release
+    # If you have some questions please contact the project admin at _mola89@gmail.com_
+    # If you need the code reference go to [Reference Reference] me at _mola89@gmail.com_).
 =Issue Tracking System=
 =Tools=
 There are some useful tools that can help you to perform a better job.
