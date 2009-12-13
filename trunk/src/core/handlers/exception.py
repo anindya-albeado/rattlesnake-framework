@@ -6,7 +6,7 @@ Users shouldn't directly call exceptions, but errors in the Error module.
 
 
 __author__ = "Rattlesnake Team"
-__version__ = "1.0"
+__version__ = "1.1.0"
 __package__ = "core.handlers"
 
 

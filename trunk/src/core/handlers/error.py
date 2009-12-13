@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-"""Errors module
+"""Errors handlers
 
 Users should call them instead of exceptions
 """
 
 
-from core.handlers.exception import ScriptException, JobException
+from core.handlers.exception import ScriptException, JobException, RsException, \
+    RegisterException
+from core.handlers.IO import warning
 
 
 __author__ = "Rattlesnake Team"
-__version__ = "1.0"
+__version__ = "1.1.0"
 __package__ = "core.handlers"
 
 errors_fatal = {"job":[], "script":[]}
@@ -90,7 +92,7 @@ def error_nonfatal(unitName, reason):
 
     global errors_nonfatal
     errors_nonfatal['job'].append((unitName, reason))
-    print "The Job will continue its execution."
+    warning("The Job execution will continue", unitName)
 
 
 
