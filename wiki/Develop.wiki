@@ -20,9 +20,9 @@ After ten `core_majrel` a new `version` is released.<br/>
 If an extension is included in the contrib part of the framework, a `contrib_rel` is released.
 
 ==The most important thing==
-A project has to be well organized. You can develop your ideas without discuss it in the brainstorming page, but it's very very important that every ideas are discussed by a lot of developers, possibly in the brainstorming page.
+A project has to be well organized. You can develop your ideas without discussing it in the [https://code.google.com/p/rattlesnake-framework/issues/list Issue Tracker], but it's very very important that every ideas are discussed by a lot of developers, possibly in the [https://code.google.com/p/rattlesnake-framework/issues/list Issue Tracker].
 The _brainstorming phase_ of the development of a feature is the most important, because a project organized well is that it has been analyzed in each of its parts.
-So, the main features that are implemented are those discussed in the brainstorming page.
+So, the main features that are implemented are those discussed in the [https://code.google.com/p/rattlesnake-framework/issues/list Issue Tracker] posts tagged as a Enhancement.
 ==Core and Contrib==
 You can decide to develop the Core of the framework or the Contrib part. What's the difference? `*`
 
