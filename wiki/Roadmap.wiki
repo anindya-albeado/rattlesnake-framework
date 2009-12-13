@@ -1,12 +1,11 @@
 #summary Development roadmap
 
-*Version 1.2.0.0* (Development not started yet)
+*Version 1.2.0* (Development not started yet)
   * Multithreading support
 
-*Version 1.1.0.0* (Under development)
-  * Support for custom Input/Output
-  * Handlers layer
+*Version 1.1.0* (Final testing phase)
+  * ~~Handlers layer~~
 
-*Version 1.0.0.0*
+*Version 1.0.0*
   * ~~Recursive parent relationships between Jobs~~
   * ~~Job and Script level exceptions~~
