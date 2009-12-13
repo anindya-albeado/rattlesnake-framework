@@ -17,11 +17,17 @@ __package__ = "core.kernel"
 class Scheduler:
     def __init__(self):
         self.h_j = DoubleDict()
-        self.root_job = Job(self.__root_runner, "Root", "Root job")
+        # root_job initializing
+        self.root_job = Job(self.__root_runner, "Root", "Parent of all jobs")
+        h = Handler()
+        self.h_j.set_obj2(h, self.root_job)
+        self.h_j.set_obj1(self.root_job, h)
 
     def add_job(self, runner, name = "Nameless", desc = "NoDesc", \
                 parent = None, exc_handler = None):
         try:
+            if parent is None:
+                parent = self.h_j.obj1_lookup(self.root_job)
             j = Job(runner, name, desc, exc_handler = exc_handler)
             h = Handler()
             # Set the dict { Handlers : Jobs }
@@ -29,14 +35,12 @@ class Scheduler:
             # Set the dict { Jobs : Handlers }
             self.h_j.set_obj1(j, h)
             # Set to the parent the 'j' Job as a child
-            if parent is None:
-                self.root_job.sched([j])
-            else:
-                parent_job = self.h_j.obj2_lookup(parent)
-                parent_job.sched([j])
-            return h
+            parent_job = self.h_j.obj2_lookup(parent)
+            parent_job.sched([j])
         except ScriptException as exc:
             print exc
+        # Return the handler to the caller
+        return h
 
     def run(self):
         try:
@@ -135,8 +139,6 @@ class Job:
         # Schedule children
         self.children = []
         self.sched(children)
-        # Update the job_list adding self to it
-        Job.job_list.append(self)
         # Update the register adding self.id to it
         Job.register.extend_availkeys([self.id])
 

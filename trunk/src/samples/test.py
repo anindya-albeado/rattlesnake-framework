@@ -1,84 +1,58 @@
 # -*- coding: utf-8 -*-
-"""General test module"""
+"""New features module tester"""
 
 
-from core.kernel.jobman import Job
-from core.handlers.exception import JobException
+import rs
+
 
 __author__ = "Rattlesnake Team"
 __version__ = "1.0"
 __package__ = "samples"
 
 
-class t_one:
+class test_one:
     def __init__(self):
-        print ">>\tt_one object initialized"
+        print "test_one object initialized"
     def __call__(self):
-        print ">>\tt_one object called"
+        print "test_one object called"
     def m_one(self):
-        print ">>\tm_one method of t_one object called"
+        print "m_one method of test_one called"
     def m_two(self):
-        print ">>\tm_two method of t_one called"
-
-class t_two:
+        print "m_two method of test_one called"
+class test_two:
     def __init__(self):
-        print ">>\tt_two object initialized"
+        print "test_two object initialized"
     def __call__(self):
-        print ">>\tt_two object called"
+        print "test_two object called"
     def m_one(self):
-        print ">>\tm_one method of t_two object called"
+        print "m_one method of test_two called"
     def m_two(self):
-        print ">>\tm_two method of t_two object called"
+        print "m_two method of test_two called"
     def m_three(self):
-        print ">>\tm_three method of t_two object called"
+        print "m_three method of test_two called"
 
-def t_three():
-    print ">>\tt_three method called"
+def test_four():
+    print "test_four method called"
 
-def t_four():
-    print ">>\tt_four method called"
 
-def t_big():
-    print ">>\tt_big method called"
 
 if __name__ == "__main__":
-    tone = t_one()
-    ttwo = t_two()
-    # Job structure:
-    # 
-    # Job job_big    ------->    t_big
-    #
-    #                   |-------> Job jtone      ------->    tone
-    #                       |-------> Job m_one      ------->    m_one
-    #                       |-------> Job m_two      ------->    m_two
-    #
-    #                   |-------> Job jttwo      ------->    ttwo
-    #                       |-------> Job m_one      ------->    m_one
-    #                       |-------> Job m_two      ------->    m_two
-    #                       |-------> Job m_three    ------->    m_three
-    #                           |-------> Job jtthree    ------->    t_three
-    #
-    #
-    # Job jtfour     ------->    t_four
-    #
+    t_one = test_one()
+    t_two = test_two()
 
-    j1 = Job(tone.m_one, "Job1.1", desc = "method one of test one")
-    j2 = Job(tone.m_two, "Job1.2", desc = "method two of test one")
-    jttwo = Job(ttwo, "Job2", "test two object",
-                [Job(ttwo.m_one, "Job2.1", "method one of test two"), \
-                 Job(ttwo.m_two, "Job2.2", "method two of test two", \
-                   [Job(ttwo.m_three, "Job2.3", "method three of test two", \
-                        [Job(t_three, "Job2.3.1", "test three method")])])])
+    # Using the Rattlesnake Framework
 
-    jtone = Job(tone, "Job1", desc = "test one object", children = [j1, j2])
-    #jtthree = Job(t_three, desc = "test three method")
-    #jtfour = Job(t_four, desc = "test four method")
-    job_big = Job(t_big, "JobBig", "test big method", [jtone, jttwo])
-    #job_big.sched([jtthree])
-    job_big()
-    #jtfour()
-    print "JobList:\t%s" % (Job.job_list,)
-    print "Register:\t%s" % (Job.register.get_availkeys(),)
+    sched_one = rs.Scheduler()
+    h_t_one = sched_one.add_job(t_one)
+    h_m_one_t_one = sched_one.add_job(t_one.m_one, parent = h_t_one)
+    h_m_two_t_one = sched_one.add_job(t_one.m_two, parent = h_m_one_t_one)
+    h_t_two = sched_one.add_job(t_two)
+    h_m_one_t_two = sched_one.add_job(t_two.m_one, parent = h_t_two)
+    h_m_two_t_two = sched_one.add_job(t_two.m_two, parent = h_m_one_t_two)
+
+    sched_one.run()
+
+
 
 
 # This file is part of the Rattlesnake project.
