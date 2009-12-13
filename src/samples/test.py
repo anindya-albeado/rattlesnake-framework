@@ -6,22 +6,20 @@ import rs
 
 
 __author__ = "Rattlesnake Team"
-__version__ = "1.0"
+__version__ = "1.1.0"
 __package__ = "samples"
 
 
 class test_one:
-    def __init__(self):
-        print "test_one object initialized"
+    __name__ = "Test One Object"
     def __call__(self):
         print "test_one object called"
     def m_one(self):
         print "m_one method of test_one called"
     def m_two(self):
         print "m_two method of test_one called"
+
 class test_two:
-    def __init__(self):
-        print "test_two object initialized"
     def __call__(self):
         print "test_two object called"
     def m_one(self):
@@ -51,7 +49,6 @@ if __name__ == "__main__":
     h_m_two_t_two = sched_one.add_job(t_two.m_two, parent = h_m_one_t_two)
 
     sched_one.run()
-
 
 
 

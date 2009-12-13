@@ -6,7 +6,7 @@ Generate an unique id
 
 
 __author__ = "Rattlesnake Team"
-__version__ = "1.0"
+__version__ = "1.1.0"
 __package__ = "core.structures"
 
 

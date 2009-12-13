@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Input/Output module"""
+"""Input/Output handler"""
 
 
 from core.structures.elemchecker import ElemChecker
 
 
 __author__ = "Rattlesnake Team"
-__version__ = "1.0"
-__package__ = "core.helpers"
+__version__ = "1.1.0"
+__package__ = "core.handlers"
 
 messages = []
 warnings = []
@@ -23,19 +23,23 @@ def warning(unitName, reason):
 
     global warnings
     warnings.append((unitName, reason))
-    print "%s produced the following warning: %s." % (unitName, reason)
+    print "Warning -- %s: %s" % (unitName, reason)
 
-def msg(unitName, message):
+def msg(message, unitName = None):
     """Message print
     
     Behaviour:
     1- Print the message
-    2- Register the warning to the messages list
+    2- Register the message to the messages list
     """
 
     global messages
     messages.append((unitName, message))
-    print "%s%s." % (unitName, (message and (" :%s" % (message,))))
+    str = ""
+    if not unitName is None:
+        str = "%s: " % (unitName,)
+    str += "%s" % (message,)
+    print str
 
 
 def input_exec(yes_function, no_function, pre_msg = "", \

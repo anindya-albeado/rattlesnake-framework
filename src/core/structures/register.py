@@ -2,12 +2,11 @@
 """Register structures"""
 
 
-from copy import copy
 from core.handlers.exception import RegisterException
 
 
 __author__ = "Rattlesnake Team"
-__version__ = "1.0"
+__version__ = "1.1.0"
 __package__ = "core.structures"
 
 
@@ -34,7 +33,7 @@ class Register:
         """Get the key list"""
 
         if key in self.__dict.keys():
-            return copy(self.__dict[key])
+            return self.__dict[key][:]
         else:
             raise RegisterException(key)
 

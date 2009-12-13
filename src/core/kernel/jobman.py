@@ -4,13 +4,14 @@
 
 from core.handlers.exception import JobException, ScriptException, \
                                     RsException
+from core.handlers.IO import msg
 from core.structures.register import Register
 from core.structures.counter import Counter
 from core.structures.doubledict import DoubleDict
 
 
 __author__ = "Rattlesnake Team"
-__version__ = "1.0"
+__version__ = "1.1.0"
 __package__ = "core.kernel"
 
 
@@ -18,7 +19,7 @@ class Scheduler:
     def __init__(self):
         self.h_j = DoubleDict()
         # root_job initializing
-        self.root_job = Job(self.__root_runner, "Root", "Parent of all jobs")
+        self.root_job = Job(self.root_runner, "Root", "Parent of all jobs")
         h = Handler()
         self.h_j.set_obj2(h, self.root_job)
         self.h_j.set_obj1(self.root_job, h)
@@ -60,8 +61,8 @@ class Scheduler:
         j = self.h_j.obj2_lookup(handler)
         j.get_regitem(j.id)
 
-    def __root_runner(self):
-        pass
+    def root_runner(self):
+        msg("Root job executed")
 
 class Handler:
 
@@ -143,14 +144,14 @@ class Job:
 
     def __str__(self):
         str = self.__repr__()
-        return 'Job > ParentID:%s ID:%s Name:%s' % tuple(str.split("|"))
+        return 'ParentID:%s ID:%s Name:%s' % tuple(str.split("|"))
 
     def __repr__(self):
         return "%s|%s|%s" % (self.parentid, self.id, self.__name__)
 
 
     def __call__(self, h_j):
-        print str(self)
+        msg("Calling:\t%s" % (str(self),))
         # Get the handler linked to the 'self' job
         handler = h_j.obj1_lookup(self)
         # onstart_job event
