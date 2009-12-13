@@ -28,7 +28,7 @@ class Scheduler:
         try:
             if parent is None:
                 parent = self.h_j.obj1_lookup(self.root_job)
-            j = Job(runner, name, desc, exc_handler = exc_handler)
+            j = Job(runner, name, desc, exc_handler)
             h = Handler()
             # Set the dict { Handlers : Jobs }
             self.h_j.set_obj2(h, j)
@@ -124,11 +124,13 @@ class Job:
     count_jobid = Counter()
 
     def __init__(self, runner, name = "Nameless", desc = "NoDesc", \
-                 children = None, exc_handler = None):
+                 exc_handler = None):
         # Initialize the attributes of self
         self.id = Job.count_jobid()
         self.runner = runner
         self.exc_handler = exc_handler
+        self.children = []
+        self.parentid = None
         # Set the __name__ attribute of self
         self.__name__ = name
         if self.__name__ == "Nameless" and hasattr(runner, "__name__"):
@@ -136,9 +138,6 @@ class Job:
         self.desc = desc
         if self.desc == "NoDesc" and hasattr(runner, "desc"):
             self.desc = runner.desc
-        # Schedule children
-        self.children = []
-        self.sched(children)
         # Update the register adding self.id to it
         Job.register.extend_availkeys([self.id])
 
@@ -183,15 +182,12 @@ class Job:
                 self.children.extend(children)
             except Exception as exc:
                 raise ScriptException(self, str(exc), self.id)
+            self.set_children_parentid();
 
-        # Set the parentid to every self.children
-        self.set_parentid()
-
-    def set_parentid(self, parentid = None):
-        self.parentid = parentid
+    def set_children_parentid(self):
         if len(self.children) > 0:
             for child in self.children:
-                child.set_parentid(self.id)
+                child.parentid = self.id
 
 
     def set_regitem(self, value):

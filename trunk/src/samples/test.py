@@ -45,7 +45,7 @@ if __name__ == "__main__":
     sched_one = rs.Scheduler()
     h_t_one = sched_one.add_job(t_one)
     h_m_one_t_one = sched_one.add_job(t_one.m_one, parent = h_t_one)
-    h_m_two_t_one = sched_one.add_job(t_one.m_two, parent = h_m_one_t_one)
+    h_m_two_t_one = sched_one.add_job(t_one.m_two, parent = h_t_one)
     h_t_two = sched_one.add_job(t_two)
     h_m_one_t_two = sched_one.add_job(t_two.m_one, parent = h_t_two)
     h_m_two_t_two = sched_one.add_job(t_two.m_two, parent = h_m_one_t_two)
